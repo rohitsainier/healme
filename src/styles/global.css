@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background: #102e37;
+    animation: colorAnimate 10s linear infinite;
+} 
+
+@keyframes colorAnimate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

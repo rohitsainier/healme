@@ -1,0 +1,37 @@
+.pulse {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  background: #0ef;/* Random background color */
+  border-radius: 50%;
+}
+
+.pulse span {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  background: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  animation: pulseAnimate 4s ease-out infinite;
+  animation-delay: calc(1s * var(--i));
+  cursor: pointer;
+}
+
+@keyframes pulseAnimate {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
