@@ -1,39 +1,40 @@
- /* Button container */
- .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Button styles */
-  .neumorphism-button {
-    padding: 15px 30px;
-    border: 0.5px;
-    border-radius: 12px;
-    background: #f0f0f0; /* Light color */
-    box-shadow: -12px -12px 20px #FFFFFFCC, 10px 10px 20px #A6B4C8B2; /* Inner and outer shadows */
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
-  }
+/* Button styles */
+.neumorphism-button {
+  padding: 15px 30px;
+  border: 0.5px;
+  border-radius: 12px;
+  background: #f0f0f0; /* Light color */
+  box-shadow:
+    -12px -12px 20px #ffffffcc,
+    10px 10px 20px #a6b4c8b2; /* Inner and outer shadows */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-  /* Hover effect */
-  .neumorphism-button:hover {
-    box-shadow: -5px -5px 10px #c9c9c9, 5px 5px 10px #ffffff; /* Adjusted shadows on hover */
-  }
+/* Hover effect */
+.neumorphism-button:hover {
+  box-shadow:
+    -5px -5px 10px #c9c9c9,
+    5px 5px 10px #ffffff; /* Adjusted shadows on hover */
+}
 
-  /* Text styles */
-  .button-text {
-    font-size: 18px;
-    color: #686868;
-    font-weight: bold;
-  }
+/* Text styles */
+.button-text {
+  font-size: 18px;
+  color: #686868;
+  font-weight: bold;
+}
 
-  /* on click effect */
-  .neumorphism-button:active {
-    box-shadow: inset -5px -5px 10px #c9c9c9, inset 5px 5px 10px #ffffff; /* Adjusted shadows on click */
-  }
-
-  
-
-
-
+/* on click effect */
+.neumorphism-button:active {
+  box-shadow:
+    inset -5px -5px 10px #c9c9c9,
+    inset 5px 5px 10px #ffffff; /* Adjusted shadows on click */
+}

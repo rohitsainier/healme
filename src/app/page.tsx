@@ -1,12 +1,11 @@
 'use client';
 import { useState } from 'react';
-import Button from "@/components/Button/Button";
+import Button from '@/components/Button/Button';
 import Pulse from '@/components/Pulse/Pulse';
-import "@/styles/global.css";
+import '@/styles/global.css';
 import generateHz, { stopHz } from '@/utils/Audio/audio';
 
 export default function Home() {
-
   const [pulse, setPulse] = useState(false);
   const [hzTitle, setHzTitle] = useState('');
 
@@ -27,17 +26,17 @@ export default function Home() {
   };
 
   return (
-    <div className='container'>
-      {
-        pulse ?  <> 
-                  <Pulse title ={hzTitle} onClick={handleStopClick}/>
-                </>
-              :  
-                <> 
-                  <Button onClick={handleRandomPlayClick}>Play Random Healing Sound</Button>
-                  <Button onClick={handleCustomPlayClick}>Play Custom Healing Sound</Button>
-                </>
-      }
+    <div className="container">
+      {pulse ? (
+        <>
+          <Pulse title={hzTitle} onClick={handleStopClick} />
+        </>
+      ) : (
+        <>
+          <Button onClick={handleRandomPlayClick}>Play Random</Button>
+          <Button onClick={handleCustomPlayClick}>Play Custom</Button>
+        </>
+      )}
     </div>
   );
 }
